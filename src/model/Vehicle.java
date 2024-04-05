@@ -88,7 +88,7 @@ public abstract class Vehicle {
 	//TOString 
 	public String toString() 
 	{
-		return ID + " " + "Name: " + title +" " + "Price: "+ price + " " + "Vehiclecode: " + vehicleCode  + " " + "Quantiy: "+ quantity + " " +"Energy-Type: "+ eType;
+		return ID + " " + "Name: " + title +" " + "Price: "+ price + " EUR  " + "Vehiclecode: " + vehicleCode  + " " + "Quantiy: "+ quantity + " " +"Energy-Type: "+ eType;
 	}
 	
 	
