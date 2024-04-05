@@ -1,6 +1,5 @@
 package model;
 
-import model.Energy_type;
 
 public abstract class Vehicle {
 	private int id;
@@ -76,7 +75,7 @@ public abstract class Vehicle {
 		setVehicleCode();
 		seteType(Energy_type.hybrid);
 	}
-	public Vehicle(String title, float price, int quantity, int vehicleCode, Energy_type eType)
+	public Vehicle(String title, float price, int quantity,Energy_type eType)
 	{
 		setId();
 		setTitle(title);
@@ -87,9 +86,9 @@ public abstract class Vehicle {
 	}
 	
 	//TOString 
-	public String tostring() 
+	public String toString() 
 	{
-		return ID + " " +  title +" " + price + " " + vehicleCode  + " " + quantity + " " + eType;
+		return ID + " " + "Name: " + title +" " + "Price: "+ price + " " + "Vehiclecode: " + vehicleCode  + " " + "Quantiy: "+ quantity + " " +"Energy-Type: "+ eType;
 	}
 	
 	

@@ -29,7 +29,12 @@ public class Train extends Vehicle {
 		setAdditionalTechnique(additionalTechnique);
 		setOnlyLargeTires(isOnlyLargeTires);
 	}
-	
+	public Train(String title, float price, int quantity,Energy_type eType, String additionalTechnique, boolean isOnlyLargeTires)
+	{
+		super(title, price, quantity, eType);
+		setAdditionalTechnique(additionalTechnique);
+		setOnlyLargeTires(isOnlyLargeTires);
+	}
 	// ToString
 	public String toString()
 	{
