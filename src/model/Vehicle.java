@@ -11,7 +11,7 @@ public abstract class Vehicle {
 	
 	private long ID;
 	
-	private static long counter = 10;
+	private static long counter = 0;
 	// setters and getters
 	public int getId() {
 		return id;
