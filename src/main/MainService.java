@@ -94,5 +94,21 @@ public class MainService {
 		Bus Newb3 = new Bus(inputtitle, inputprice,inputquantity,inputeType, inputumberOfSeat, false);
 			allVehicles.add(Newb3);
 	}
-
+	// creating CRUD 
+	public static void updateBusById(int id, float price, int quantity, Energy_type etype, int numberOfSeats) throws Exception{
+		for (Vehicle tempV : allVehicles) {
+			if(tempV.getId() == id )
+			{
+					Bus tempBus = (Bus) tempV;
+					tempBus.setPrice(price);
+					tempBus.setQuantity(quantity);
+					tempBus.seteType(etype);
+					tempBus.setNumberOfSeat(numberOfSeats);
+				
+			}
+		}
+		throw new Exception("bus aleady Exits");
+		
+	}
+	
 }
